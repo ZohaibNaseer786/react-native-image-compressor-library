@@ -1,16 +1,16 @@
-# react-native-image-compressor-library
+# react-native-image-compressor
 
 A simple image resizing and compression package, taking care of the resizing process on the native side. Supports iOS and Android out of the box.
 
 ## Getting started
 
-`$ npm install @nomi9995/react-native-image-compressor --save`
+`$ npm install react-native-image-compressor-library --save`
 
-`$ yarn add @nomi9995/react-native-image-compressor`
+`$ yarn add react-native-image-compressor-library`
 
 ### Mostly automatic installation
 
-`$ react-native link @nomi9995/react-native-image-compressor`
+`$ react-native link react-native-image-compressor-library`
 
 ### Manual installation
 
@@ -25,23 +25,23 @@ A simple image resizing and compression package, taking care of the resizing pro
 
 1. Open up `android/app/src/main/java/[...]/MainApplication.java`
 
-- Add `import com.nomi9995.imagecompressor.TRNReactNativeImageCompressorPackage;` to the imports at the top of the file
+- Add `import com.imagecompressorlibrary.TRNReactNativeImageCompressorPackage;` to the imports at the top of the file
 - Add `new TRNReactNativeImageCompressorPackage()` to the list returned by the `getPackages()` method
 
 2. Append the following lines to `android/settings.gradle`:
    ```
-   include ':@nomi9995_react-native-image-compressor'
-   project(':@nomi9995_react-native-image-compressor').projectDir = new File(rootProject.projectDir, 	'../node_modules/@nomi9995/react-native-image-compressor/android')
+   include ':react-native-image-compressor-library'
+   project(':react-native-image-compressor-library').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-image-compressor-library/android')
    ```
 3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
    ```
-     implementation project(':@nomi9995_react-native-image-compressor')
+     implementation project(':react-native-image-compressor-library')
    ```
 
 ## Usage
 
 ```javascript
-import ImageCompressor from "@nomi9995/react-native-image-compressor";
+import ImageCompressor from "react-native-image-compressor-library";
 
 const result = await ImageCompressor.compress(
   "file://bowling-alleys/the-dude.jpg",
