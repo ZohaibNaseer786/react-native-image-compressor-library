@@ -1,0 +1,42 @@
+{
+  "name": "react-native-image-compressor-library",
+  "title": "React Native Image Compressor",
+  "version": "0.0.1",
+  "description": "A native image resizing & compression tool for iOS & Android.",
+  "main": "ImageCompressor.js",
+  "types": "ImageCompressor.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nomi9995/react-native-image-compressor.git",
+    "baseUrl": "https://github.com/nomi9995/react-native-image-compressor"
+  },
+  "keywords": [
+    "react-native",
+    "ios",
+    "android",
+    "image",
+    "compression",
+    "resize",
+    "picture",
+    "photo",
+    "jpeg",
+    "png"
+  ],
+  "author": {
+    "name": "zohaibnaseer786"
+  },
+  "license": "MIT",
+  "licenseFilename": "LICENSE",
+  "readmeFilename": "README.md",
+  "peerDependencies": {
+    "react": ">=16.8",
+    "react-native": ">=0.59 <1.0"
+  },
+  "devDependencies": {
+    "react": "^16.8.3",
+    "react-native": "^0.59.10"
+  }
+}

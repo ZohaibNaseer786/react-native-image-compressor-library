@@ -1,0 +1,32 @@
+platform :ios, '9.0'
+target 'example' do
+	rn_path = '../node_modules/react-native'
+
+	use_modular_headers!
+
+	pod 'yoga', path: "#{rn_path}/ReactCommon/yoga/yoga.podspec"
+    pod 'DoubleConversion', :podspec => "#{rn_path}/third-party-podspecs/DoubleConversion.podspec", :modular_headers => false
+    pod 'Folly', :podspec => "#{rn_path}/third-party-podspecs/Folly.podspec", :modular_headers => false
+    pod 'glog', :podspec => "#{rn_path}/third-party-podspecs/GLog.podspec", :modular_headers => false
+    pod 'React', path: rn_path, subspecs: [
+        'Core',
+    	'CxxBridge',
+    	'RCTAnimation',
+    	'RCTActionSheet',
+    	'RCTImage',
+    	'RCTLinkingIOS',
+    	'RCTNetwork',
+    	'RCTSettings',
+    	'RCTText',
+    	'RCTVibration',
+    	'RCTWebSocket',
+    	'RCTPushNotification',
+    	'RCTCameraRoll',
+    	'RCTSettings',
+    	'RCTBlob',
+    	'RCTGeolocation',
+    	'DevSupport'
+    ]
+
+	pod 'react-native-image-compressor', :path => '../../react-native-image-compressor.podspec'
+end
