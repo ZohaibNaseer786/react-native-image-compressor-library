@@ -1,4 +1,4 @@
-# react-native-image-compressor
+# react-native-image-compressor-library
 
 A simple image resizing and compression package, taking care of the resizing process on the native side. Supports iOS and Android out of the box.
 
