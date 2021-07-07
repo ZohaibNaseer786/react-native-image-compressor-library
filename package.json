@@ -10,8 +10,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nomi9995/react-native-image-compressor.git",
-    "baseUrl": "https://github.com/nomi9995/react-native-image-compressor"
+    "url": "git+https://github.com/ZohaibNaseer786/react-native-image-compressor-library.git",
+    "baseUrl": "https://github.com/ZohaibNaseer786/react-native-image-compressor-library"
   },
   "keywords": [
     "react-native",
